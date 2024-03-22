@@ -54,5 +54,16 @@ public class Main {
         int new_length = Main.processArray(arrayList);
         for(int i=0; i<new_length; i++)
             System.out.println(arrayList.get(i));
+        
+        //Main main = new Main();
+       // main.myMethod("gfg","fgfdg","gfdgfd");
+    }
+    
+    public void myMethod(String... strings){
+        for(String whatever : strings){
+        	System.out.println(whatever);
+        }
+
+        
     }
 }

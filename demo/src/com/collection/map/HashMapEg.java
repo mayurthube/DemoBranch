@@ -5,6 +5,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.collection.arraylist.Student;
+
 public class HashMapEg {
 
 	 public static void main(String args[]) {
@@ -41,7 +43,20 @@ public class HashMapEg {
 	    	  Entry entry =  (Entry) it.next();
 	    	  System.out.println(entry.getKey() +" : " + entry.getValue());
 	      }
+	      
+	      Student s = new Student(2, "Mayur Thube", 30,65);
+	 	 int index = "thube".hashCode() & (16-1);
+	 	 System.out.println(index);
+	 	 
+	 	 Map <Student, String> map = new HashMap<Student,String>();
+	 	Student s1 = new Student(223, "Mayur", 26,65);
+	 	map.put(s1, "S1");
+	 	map.put(new Student(223, "Mayur", 26,65), "S2");
+	 	System.out.println(map.size());
+	 	map.put(new Student(223, "Mayur", 26,65), "S2");
+	 	System.out.println(":::"+map.size());
 	 }
+	 
 	 
 	 
 }

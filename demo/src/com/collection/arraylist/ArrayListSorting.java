@@ -5,9 +5,9 @@ import java.util.*;
 public class ArrayListSorting {
 	   public static void main(String args[]){
 		   ArrayList<Student> arraylist = new ArrayList<Student>();
-		   Student s1 = new Student(223, "Mayur", 26);
-		   Student s2 = new Student(245, "Nikhil", 24);
-		   Student s3 = new Student(209, "Nilesh", 32);
+		   Student s1 = new Student(223, "Mayur", 26,65);
+		   Student s2 = new Student(245, "Nikhil", 24,58);
+		   Student s3 = new Student(209, "Nilesh", 32,99);
 		   
 		   
 		   arraylist.add(s1);

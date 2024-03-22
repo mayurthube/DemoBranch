@@ -14,7 +14,7 @@ public class ClassDemo {
 	        Integer i =new Integer(5);
 	        Class[] ca = {i.getClass()};
 
-	        Constructor constructor = cls.getConstructor(ca);
+	        Constructor constructor = cls.getConstructor();
 	        Object[] o = {i};
 	        Object parent = constructor.newInstance((Object) null);
 	        cls.getClass().getMethod("demo", null).invoke(cls);

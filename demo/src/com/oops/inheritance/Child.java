@@ -18,4 +18,7 @@ public class Child extends Parent{
 		System.out.println("Child Demo1");
 
 	}
+	public void demoOne() {
+		System.out.println("Child demoOne");
+	}
 }

@@ -12,6 +12,16 @@ public interface FuncInterface {
     // A non-abstract (or default) function
     default void normalFun()
     {
-       System.out.println("Hello");
+       System.out.println("FuncInterface: Hello");
+    }
+ 
+    /*default void normalFun2()
+    {
+       System.out.println("FuncInterface: Hello");
+    }*/
+ // A non-abstract (or Static) function
+    static void staticFun()
+    {
+       System.out.println("FuncInterface.staticFun");
     }
 }

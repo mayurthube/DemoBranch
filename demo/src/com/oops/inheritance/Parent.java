@@ -9,5 +9,8 @@ public class Parent {
 		System.out.println("Parent Demo");
 
 	}
+	public void demoOne() {
+		System.out.println("Parent demoOne");
 
+	}
 }

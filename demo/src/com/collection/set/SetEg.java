@@ -21,7 +21,7 @@ public class SetEg {
 		Employee empTwo = new Employee(26, "Mayur");
 		Set<Employee> empSet = new HashSet<Employee>();
 		empSet.add(empOne);
-		empSet.add(empOne);
+		empSet.add(empTwo);
 		
 		System.out.println("empSet.size() : " + empSet.size());
 		System.out.println("empSet : " + empSet);

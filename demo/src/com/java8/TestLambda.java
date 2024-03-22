@@ -2,6 +2,7 @@ package com.java8;
 
 import java.util.ArrayList;
 import java.util.function.BiConsumer;
+import java.util.function.Predicate;
 
 import com.collection.arraylist.Student;
 
@@ -15,10 +16,17 @@ public class TestLambda {
         FuncInterface fobj = (x)->System.out.println(3*x);
         fobj.abstractFun(5);
         
+        // Predicate example
+        Predicate<Integer> greaterThan10 = (x)->{
+        	System.out.println(""+x);
+        	 return x>10;
+        	};
+        	System.out.println("Predicate greaterThan10 : "+greaterThan10.test(15));
+        	
         ArrayList<Student> arraylist = new ArrayList<Student>();
-		   Student s1 = new Student(223, "Mayur", 26);
-		   Student s2 = new Student(245, "Nikhil", 24);
-		   Student s3 = new Student(209, "Nilesh", 32);
+		   Student s1 = new Student(223, "Mayur", 26, 75);
+		   Student s2 = new Student(245, "Nikhil", 24, 60);
+		   Student s3 = new Student(209, "Nilesh", 32, 45);
 		   
 		   
 		   arraylist.add(s1);

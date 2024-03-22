@@ -5,11 +5,14 @@ public class Student {
 	private String studentname;
     private int rollno;
     private int studentage;
+    private int marks;
+    private String grade;
 
-    public Student(int rollno, String studentname, int studentage) {
+    public Student(int rollno, String studentname, int studentage, int marks) {
          this.rollno = rollno;
          this.studentname = studentname;
          this.studentage = studentage;
+         this.marks = marks;
     }
     
 	public String getStudentname() {
@@ -49,7 +52,26 @@ public class Student {
 	        return compareage-this.studentage;
 	    }*/
 	
-	 /*Comparator for sorting the list by Student Name*/
+	 public int getMarks() {
+		return marks;
+	}
+
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
+
+
+
+		/*Comparator for sorting the list by Student Name*/
 		public static Comparator<Student> compareStudent =new Comparator<Student>(){
 		
 			public int compare(Student s1 , Student s2){
@@ -78,10 +100,13 @@ public class Student {
 			   /*For descending order*/
 			   //rollno2-rollno1;
 	   }};
+
+		@Override
+		public String toString() {
+			return "Student [studentname=" + studentname + ", rollno=" + rollno + ", studentage=" + studentage
+					+ ", marks=" + marks + ", grade=" + grade + "]";
+		}
 	    
-	    @Override
-	    public String toString() {
-	        return "[ rollno = " + rollno + ", name = " + studentname + ", age = " + studentage + "]";
-	    }
+	    
     
 }
